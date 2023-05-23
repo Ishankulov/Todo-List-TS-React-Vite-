@@ -12,7 +12,7 @@ interface Props {
 
 const ColorModeSwitch = ({ text }: Props) => {
   const { colorMode, toggleColorMode } = useColorMode();
-  const color = useColorModeValue("linear(to-l, #7928CA, #FF0080)", "linear(red.100 0%, orange.100 25%, yellow.100 50%)");
+  const color = useColorModeValue("linear(to-l, #7928CA, #FF0080)", "linear(to-r, red.500, yellow.500)");
   return (
     <HStack>
       <Switch
